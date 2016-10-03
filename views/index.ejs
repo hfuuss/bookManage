@@ -1,0 +1,19 @@
+<%- include header %>
+<% books.forEach(function (book, index) { %>
+
+ <p><h2><a href="u/<%= book.bookName %>"><%= book.bookName %></a></h2></p>
+
+	<p class="info">
+    作者：<%= book.bookAuthor %>|
+    日期：<%= book.bookPubDate  %>
+ 	 </p>
+<!-- 
+   序号：<%=book.bookNumber %><br />
+   书名：<%=book.bookName %><br />
+   作者：<%=book.bookAuthor %><br />
+   出版社：<%=book.bookPublish %><br />
+   出版日期：<%=book.bookPubDate %><br />
+   <br /> -->
+<% }) %>
+<%- include footer %>
+<!-- //序号、书名、作者（编著）、出版社、出版日期  bookNumber, bookName,bookAuthor,bookPublish,bookPubDate-->

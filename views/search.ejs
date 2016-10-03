@@ -1,0 +1,14 @@
+<%- include header %>
+<ul class="archive">
+结果如下：<br/>
+<% books.forEach(function (book, index) { %>
+
+   序号：<%=book.bookNumber %><br />
+   书名：<%=book.bookName %><br />
+   作者：<%=book.bookAuthor %><br />
+   出版社：<%=book.bookPublish %><br />
+   出版日期：<%=book.bookPubDate %><br />
+   <br />
+<% }) %>
+</ul>
+<%- include footer %>
